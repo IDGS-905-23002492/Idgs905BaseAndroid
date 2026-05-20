@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Ejemplo2.ejemplo2">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Distancia entre dos puntos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtX1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:hint="X1"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/edtY1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <EditText
+        android:id="@+id/edtY1"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:hint="Y1"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/edtX1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtX1"
+        app:layout_constraintTop_toTopOf="@+id/edtX1" />
+
+    <EditText
+        android:id="@+id/edtX2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:hint="X2"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintEnd_toStartOf="@+id/edtY2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtX1" />
+
+    <EditText
+        android:id="@+id/edtY2"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:hint="Y2"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/edtX2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtX2"
+        app:layout_constraintTop_toTopOf="@+id/edtX2" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Calcular Distancia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtX2" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Resultado: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
