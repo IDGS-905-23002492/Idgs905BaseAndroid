@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
+            android:name=".ExamenResistencias.calculadoraResistencias"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplicaAB.ResultMultiplicaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiplicaAB.multiplicaAB"
+            android:exported="false" />
+        <activity
             android:name=".Ejemplo3.ResultActivity"
             android:exported="false" />
         <activity

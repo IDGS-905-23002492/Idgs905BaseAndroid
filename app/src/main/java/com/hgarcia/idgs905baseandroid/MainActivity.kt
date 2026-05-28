@@ -10,6 +10,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.hgarcia.idgs905baseandroid.Ejemplo1.ejemplo1
 import com.hgarcia.idgs905baseandroid.Ejemplo2.ejemplo2
 import com.hgarcia.idgs905baseandroid.Ejemplo3.ejemplo3
+import com.hgarcia.idgs905baseandroid.ExamenResistencias.calculadoraResistencias
+import com.hgarcia.idgs905baseandroid.MultiplicaAB.multiplicaAB
 import com.hgarcia.idgs905baseandroid.R.id
 import kotlin.jvm.java
 
@@ -21,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         val btnEjemplo1 = findViewById<Button>(id.btn1)
         val btnEjemplo2 = findViewById<Button>(id.btn2)
         val btnEjemplo3 = findViewById<Button>(id.btn3)
+        val btnMultiplicaAB = findViewById<Button>(id.btnMultiplicaAB)
+        val btncalculadoraResistencias = findViewById<Button>(id.btnCalculadoraResistencias)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -29,9 +34,10 @@ class MainActivity : AppCompatActivity() {
         btnEjemplo1.setOnClickListener { navegateToEjemlo1() }
         btnEjemplo2.setOnClickListener { navegateToEjemplo2() }
         btnEjemplo3.setOnClickListener { navigateToEjemplo3() }
+        btnMultiplicaAB.setOnClickListener { navigateToMultiplicaAB() }
+        btncalculadoraResistencias.setOnClickListener { navigateToCalculadoraResistencias() }
 
-
-}
+        }
     fun navegateToEjemlo1(){
     val intent = Intent(this, ejemplo1::class.java)
     startActivity(
@@ -46,6 +52,18 @@ class MainActivity : AppCompatActivity() {
     }
     fun navigateToEjemplo3(){
         val intent = Intent(this, ejemplo3::class.java)
+        startActivity(
+            intent
+        )
+    }
+    fun navigateToMultiplicaAB(){
+        val intent = Intent(this, multiplicaAB::class.java)
+        startActivity(
+            intent
+        )
+    }
+    fun navigateToCalculadoraResistencias(){
+        val intent = Intent(this, calculadoraResistencias::class.java)
         startActivity(
             intent
         )

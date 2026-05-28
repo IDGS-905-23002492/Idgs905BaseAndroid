@@ -31,4 +31,18 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <Button
+        android:id="@+id/btnMultiplicaAB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MultiplicaAB"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalculadoraResistencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculadora de Resistencias"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </LinearLayout>
