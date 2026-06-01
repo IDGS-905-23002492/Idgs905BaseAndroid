@@ -54,7 +54,6 @@ class calculadoraResistencias : AppCompatActivity() {
         val txtMaximo = findViewById<TextView>(R.id.txtMaximo)
         val txtMinimo = findViewById<TextView>(R.id.txtMinimo)
         val btnCalcularResistencia = findViewById<Button>(R.id.btnCalcularResistencia)
-
         val adapterColores = ArrayAdapter(this, android.R.layout.simple_spinner_item, colores)
             adapterColores.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
